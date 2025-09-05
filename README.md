@@ -32,11 +32,10 @@ A comprehensive toolkit for creating perfectly aligned, interactive UMAP visuali
 ```bash
 pip install plotly pandas numpy matplotlib pillow pyyaml umap-learn
 ```
-
-### System Requirements
-- Python 3.8+
-- 4GB+ RAM (for large datasets)
-- GPU recommended for UMAP computation (optional)
+or
+```bash
+pip install requirements.txt
+```
 
 ## 📁 Required Input Files
 
@@ -67,7 +66,9 @@ pip install plotly pandas numpy matplotlib pillow pyyaml umap-learn
    - `Probabilities`: Array of prediction probabilities
    - `y_true`: Array of true labels
 
-3. **UMAP embedding data** - Pre-computed UMAP coordinates (auto-generated if missing)
+3. **UMAP embedding data** - Pre-computed UMAP coordinates
+   - Before the very first run of the slider, you can run 01_umaps_better3.py
+   - You can change the hyperparameter values of UMAP from the config file
 
 ## 🔄 Complete Workflow
 
@@ -75,9 +76,6 @@ pip install plotly pandas numpy matplotlib pillow pyyaml umap-learn
 ```bash
 # Run complete pipeline from scratch
 ./run_full_pipeline.bat
-
-# Quick regeneration after data changes
-./regenerate_overlays.bat
 ```
 
 ### Option 2: Manual Step-by-Step
@@ -228,14 +226,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Built on the excellent [UMAP](https://umap-learn.readthedocs.io/) dimensionality reduction library
 - Interactive visualizations powered by [Plotly](https://plotly.com/)
+- Cluster Analysis in the early steps with [HDBSCAN](https://hdbscan.readthedocs.io/en/latest/how_hdbscan_works.html)
 - Inspired by the need for rigorous alignment in multi-layer scientific visualizations
 
-## 📞 Support
+## 📞 Documentation
 
-- **Issues**: Please open a GitHub issue for bugs or feature requests
-- **Discussions**: Use GitHub Discussions for questions and community support
 - **Documentation**: See `PIPELINE_README.md` for detailed technical documentation
 
 ---
 
-*Perfect alignment, powerful insights, seamless interaction* ✨
