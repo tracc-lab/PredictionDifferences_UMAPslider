@@ -1,0 +1,46 @@
+# Example configuration file for UMAP Interactive Overlay Viewer
+# Copy this to config.yaml and customize for your project
+
+paths:
+  # Base directory for UMAP results
+  base_dir: "umap_results_2"
+  
+  # CSV file containing detailed prediction results
+  detailed_results: "detailed_results_run_11.csv"
+
+# UMAP parameters used for embedding generation
+umap:
+  min_dist: 0.1
+  n_neighbors: 100
+
+# Dataset column configurations
+columns:
+  # Column used for initial UMAP coloring
+  color_column: "event"
+
+# Highlight configuration for specific subjects/samples
+highlight:
+  # Column containing subject/sample IDs
+  id_column: "id"
+  
+  # List of IDs to highlight in visualizations
+  # These will be shown with special colors in overlays
+  ids: [363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 
+        373, 374, 375, 376, 377, 378, 379, 380, 381, 382,
+        # Add more IDs as needed...
+        ]
+  
+  # Colors for highlighted vs regular points
+  highlight_color: "#FF0000"  # Red for highlighted subjects
+  default_color: "#1f77b4"    # Blue for regular points
+
+# Optional: Additional visualization settings
+visualization:
+  # Image output settings
+  width: 1600
+  height: 1200
+  scale: 2
+  
+  # Marker settings
+  marker_size: 14
+  marker_opacity: 0.7
