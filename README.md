@@ -1,6 +1,11 @@
 # UMAP Interactive Overlay Viewer 🎯
 
-A comprehensive toolkit for creating perfectly aligned, interactive UMAP visualizations with prediction accuracy and probability intensity overlays. This tool addresses the critical challenge of visual misalignment in multi-layer UMAP plots, ensuring pixel-perfect overlay accuracy for scientific analysis.
+Welcome! 
+This is a comprehensive toolkit for creating perfectly aligned, interactive UMAP visualizations with prediction accuracy and probability intensity overlays. This tool addresses the critical challenge of visual misalignment in multi-layer UMAP plots, ensuring pixel-perfect overlay accuracy for scientific analysis.
+
+[![Demo]](https://github.com/user-attachments/assets/5a197a59-6c66-4ca2-bfa1-097094b6b45b)
+
+
 
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Plotly](https://img.shields.io/badge/plotly-5.0+-green.svg)](https://plotly.com/)
